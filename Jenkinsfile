@@ -1,6 +1,8 @@
 node {
     def app
 
+    env.MSYS_NO_PATHCONV = 1
+
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
 
